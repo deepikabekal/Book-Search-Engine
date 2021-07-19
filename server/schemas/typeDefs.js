@@ -20,8 +20,12 @@ type Query {
 }
 
 type Auth {
-    token : String
+    token : ID!
     user : User
+}
+
+type Query {
+    me : User
 }
 
 `;

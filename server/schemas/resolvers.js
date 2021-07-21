@@ -49,6 +49,7 @@ const resolvers = {
         },
 
         saveBook: async (parent, {input}, context) => {
+            console.log( context.user )
             const book = {...input}
             if (context.user) {
                 const user = context.user
